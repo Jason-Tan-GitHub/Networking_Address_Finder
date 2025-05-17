@@ -109,8 +109,6 @@ public class Main {
 
                 }
 
-                sc.close();
-
             } else if (method.equals("vlsm")) {
 
                 System.out.print("Please enter the initial IP address (e.g., 192.168.1.0): ");
@@ -215,6 +213,7 @@ public class Main {
                 }
             }
 
+            sc.nextLine();
             System.out.print("\nDo you wish to continue? (Press Enter to continue, type 'e' to exit): ");
             continueChoice = sc.nextLine().trim().toLowerCase();
 
